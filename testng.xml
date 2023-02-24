@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" >
+<!--    <listeners>-->
+<!--        <listener class-name="com.listeners.TestListeners"></listener>-->
+<!--    </listeners>-->
+    <test preserve-order="true" name="Tasks App Automation Tests">
+        <classes>
+            <class name="com.testCases.ListCreationTest"></class>
+            <class name="com.testCases.TaskCreationTest"></class>
+            <class name="com.testCases.TaskSearchTest"></class>
+        </classes>
+    </test>
+</suite>
