@@ -18,7 +18,6 @@ public class BaseTest {
     public InputStream inputStream;
 
     public BaseTest() throws IOException {
-//        setup("android");
         PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
 
     }
@@ -39,7 +38,6 @@ public class BaseTest {
 
         UiAutomator2Options options = new UiAutomator2Options()
                 .setPlatformName("android")
-               // .setPlatformName(platformName)
                 .setAutomationName(props.getProperty("androidAutomationName"))
                 .setAppPackage(props.getProperty("androidAppPackage"))
                 .setAppActivity(props.getProperty("androidAppActivity"))
