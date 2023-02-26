@@ -23,8 +23,7 @@ public class BaseTest {
     }
 
     public AppiumDriver getDriver() throws IOException {
-        if (this.driver == null)
-        {
+        if (this.driver == null){
             setup();
         }
         return this.driver;
